@@ -1,0 +1,15 @@
+#a {
+    border-bottom: 5px solid red;
+}
+
+#b {
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: aqua;
+    border-style: solid;
+}
+
+#c {
+    border-left: 5px solid blue;
+    background-color: aqua;
+}
