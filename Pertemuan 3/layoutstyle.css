@@ -51,4 +51,25 @@ input[type="text"] {
 body {
     background-color: #CDD984;
     font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 10px;
+}
+
+.kiri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kiri label {
+    width: 50%;
 }

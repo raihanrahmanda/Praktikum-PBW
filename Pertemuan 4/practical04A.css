@@ -24,17 +24,14 @@ h2 {
 
 #bagian1,
 #bagian2 {
-    display: inline;
-    background-color: #ccd;
+    display: inline-block;
+    background-color: red;
     padding: 0 1em 0 1em;
 }
 
 nav ol {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background-color: aliceblue;
 }
 
 nav li {
@@ -43,12 +40,12 @@ nav li {
 
 nav li a {
     display: block;
-    color: white;
+    color: lightyellow;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 1em 0 1em;
     text-decoration: none;
 }
 
 nav li a:hover {
-    background-color: #111;
+    background-color: lightyellow;
 }
