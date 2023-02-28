@@ -1,4 +1,4 @@
-.col {
+.box1 {
     width: 300px;
     height: 500px;
     border: 1px solid black;
@@ -8,7 +8,7 @@
     margin: 10px;
 }
 
-.col2 {
+.box2 {
     width: 500px;
     height: 250px;
     border: 1px solid black;
@@ -18,7 +18,7 @@
     margin: 10px;
 }
 
-.col3 {
+.box3 {
     width: 300px;
     height: 250px;
     border: 1px solid black;
@@ -28,7 +28,7 @@
     margin: 10px;
 }
 
-.col4 {
+.box4 {
     width: 841px;
     height: 209px;
     border: 1px solid black;
@@ -43,12 +43,12 @@ input[type="text"] {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 300px;
 }
 
-body{
+body {
     background-color: #CDD984;
     font-family: Arial, sans-serif;
 }

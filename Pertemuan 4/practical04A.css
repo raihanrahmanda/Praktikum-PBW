@@ -1,0 +1,54 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2.0em;
+    color: Navy;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: Navy;
+}
+
+#paragraf1,
+#paragraf2,
+#paragraf3 {
+    background-color: lightyellow;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.5em 0 0.5em 0;
+    border-radius: 1.0em;
+}
+
+#bagian1,
+#bagian2 {
+    display: inline;
+    background-color: #ccd;
+    padding: 0 1em 0 1em;
+}
+
+nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
