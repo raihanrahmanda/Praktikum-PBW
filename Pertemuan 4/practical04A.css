@@ -25,27 +25,69 @@ h2 {
 #bagian1,
 #bagian2 {
     display: inline-block;
-    background-color: red;
+    background-color: #ccd;
     padding: 0 1em 0 1em;
+}
+
+dt {
+    margin-top: 10px;
+    color: white;
+    background-color: navy;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    background-color: #ccd;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+nav {
+    display: flex;
+    max-width: fit-content;
+    background-color: #AAB;
+}
+
+nav a {
+    margin: 0 1em;
+    padding: .3em;
+    color: navy;
+    background-color: #CCD;
 }
 
 nav ol {
-    list-style-type: none;
-    background-color: aliceblue;
+    display: flex;
+    background-color: black;
+    width: 15%;
 }
 
 nav li {
-    float: left;
+    justify-content: space-between;
 }
 
-nav li a {
+ol {
+    counter-reset: item;
+    padding-left: 0em;
+}
+
+ol li {
     display: block;
-    color: lightyellow;
-    text-align: center;
-    padding: 0 1em 0 1em;
-    text-decoration: none;
 }
 
-nav li a:hover {
+ol li::before {
+    content: counters(item, ".") ".    ";
+    counter-increment: item;
+}
+
+nav a:hover {
     background-color: lightyellow;
+}
+
+ul {
+    padding-left: 1em;
 }

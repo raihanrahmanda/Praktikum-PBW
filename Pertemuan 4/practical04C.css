@@ -1,0 +1,74 @@
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+}
+
+nav li a {
+    display: block;
+    height: 30px;
+    padding: 5px 1.5em;
+    color: #ffff;
+    text-decoration: none;
+}
+
+nav li a.active {
+    background-color: #C74451;
+}
+
+.judul {
+    font-weight: bold;
+}
+
+.tanggal {
+    font-style: italic;
+}
+
+article {
+    border: 0px;
+    padding: 10px;
+}
+
+#konten {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+}
+
+aside {
+    grid-column: 1 / 2;
+}
+
+aside ol {
+    list-style: none;
+}
+
+article {
+    grid-column: 2 / 3;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    padding-bottom: 5px;
+}
+
+.last {
+    background-color: black;
+}
+
+nav a:hover {
+    background-color: #C74451;
+}
