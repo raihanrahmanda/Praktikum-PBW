@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 07C</title>
+</head>
+
+<body>
+    <script>
+        Array.prototype.toString = function () {
+            var arrStr = "[";
+            for (var i = 0; i < this.length; i++) {
+                arrStr += this[i];
+                if (i < this.length - 1) {
+                    arrStr += ", ";
+                }
+            }
+            return (arrStr += "]");
+        }
+
+        var values = [0, 123, 1.23e2, "12.3e1", true, false, NaN, Infinity, undefined, null, [0]];
+        for (var i = 0; i < values.length; i++) {
+            document.writeln(i + ") The type of " + values[i] + " is " + typeof (values[i]) + "<br>");
+        }
+        document.writeln(i + ") The type of " + values + " is " + typeof (values) + "<br>");
+        document.writeln("Elements of values are: " + values.join() + "<br>")
+    </script>
+    <noscript>JavaScript not supported or disabled</noscript>
+</body>
+
+</html>

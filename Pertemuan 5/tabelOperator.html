@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Operator</title>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.writeln("(number)0 == (number)0: " + (0 == 0) + "<br>");
+        document.writeln("(number)0 === (number)0: " + (0 === 0) + "<br>");
+        document.writeln("(number)0 < (number)0: " + (0 < 0) + "<br>");
+        document.writeln("(number)0 > (number)0: " + (0 > 0) + "<br>");
+        document.writeln("<br>");
+        document.writeln("(number)0 == (number)123: " + (0 == 123) + "<br>");
+        document.writeln("(number)0 === (number)123: " + (0 === 123) + "<br>");
+        document.writeln("(number)0 < (number)123: " + (0 < 123) + "<br>");
+        document.writeln("(number)0 > (number)123: " + (0 > 123) + "<br>");
+        document.writeln("<br>");
+    </script>
+    <table id="myTable">
+        <caption>TABEL OPERATOR</caption>
+    </table>
+
+    <script>
+        var table = document.getElementById("myTable");
+        var row1 = table.insertRow();
+        var cell1 = row1.insertCell(0);
+        var cell2 = row1.insertCell(1);
+        var cell3 = row1.insertCell(2);
+        var cell4 = row1.insertCell(3);
+        cell1.innerHTML = "(number)0 == (number)0: " + (0 == 0) + "<br>";
+        cell2.innerHTML = "(number)0 === (number)0: " + (0 === 0) + "<br>";
+        cell3.innerHTML = "(number)0 < (number)0: " + (0 < 0) + "<br>";
+        cell4.innerHTML = "(number)0 > (number)0: " + (0 > 0) + "<br>";
+
+        var row2 = table.insertRow();
+        var cell5 = row2.insertCell(0);
+        var cell6 = row2.insertCell(1);
+        var cell7 = row2.insertCell(2);
+        var cell8 = row2.insertCell(3);
+        cell5.innerHTML = "(number)0 == (number)123: " + (0 == 123) + "<br>";
+        cell6.innerHTML = "(number)0 === (number)123: " + (0 === 123) + "<br>";
+        cell7.innerHTML = "(number)0 < (number)123: " + (0 < 123) + "<br>";
+        cell8.innerHTML = "(number)0 > (number)123: " + (0 > 123) + "<br>";
+    </script>
+</body>
+
+</html>
