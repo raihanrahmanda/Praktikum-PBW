@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cashier Machine</title>
+    <link rel="stylesheet" type="text/css" href="kasirstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cashier Machine</h1>
+        <label for="item">Item:</label>
+        <input type="text" id="item" placeholder="Enter item name">
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter item price">
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" placeholder="Enter item quantity">
+        <button onclick="addItem()">Add Item</button>
+        <div id="items"></div>
+        <div id="total">Total: Rp0.000</div>
+    </div>
+
+    <script src="scriptkasir.js"></script>
+</body>
+
+</html>

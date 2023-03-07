@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kasir Sederhana</title>
+    <link rel="stylesheet" href="mesinKasir.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="kiri">
+            <h1>Kasir Sederhana</h1>
+
+            <label for="barang">Nama Barang:</label>
+            <input type="text" id="barang" placeholder="Masukkan Nama Barang"><br>
+
+            <label for="harga">Harga Barang:</label>
+            <input type="text" id="harga" placeholder="Masukkan Harga Barang"><br>
+
+            <label for="kuantitas">Kuantitas</label>
+            <input type="text" id="kuantitas" placeholder="Masukkan Kuantitas Barang">
+
+            <button onclick="tambah()">Tambahkan</button>
+        </div>
+        <div class="kanan">
+            <h2>Daftar Belanja</h2>
+            <table id="daftar_belanja">
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Harga Barang</th>
+                    <th>Kuantitas Barang</th>
+                    <th>Total Harga @</th>
+                </tr>
+            </table>
+            <h2>Total Harga</h2>
+            <p id="total_harga">Rp 0</p>
+
+            <h2>Pembayaran</h2>
+            <input type="text" id="bayar" placeholder="Masukkkan Uang Anda">
+            <button onclick="kembalian()">Bayar</button>
+
+            <h2>Uang Kembali</h2>
+            <p id="uang_kembali">Rp 0</p>
+        </div>
+    </div>
+
+    <footer>
+        Dikerjakan Oleh Kelompok 1
+    </footer>
+
+    <script src="mesinKasir.js"></script>
+</body>
+
+</html>
