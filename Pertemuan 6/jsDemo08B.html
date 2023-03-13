@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 08B</title>
+    <script>
+        // Function sumAll has no minimum number of arguments,
+        // but accepts an arbitrary number of arguments
+        function sumAll() {
+            sum = 0
+            for (var i = 0; i < arguments.length; i++)
+                sum = sum + arguments[i];
+            return sum;
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        document.writeln("sumAll() = " + sumAll() + "<br>")
+        document.writeln("sumAll(2) = " + sumAll(2) + "<br>")
+        document.writeln("sumAll(2,3) = " + sumAll(2, 3) + "<br>")
+        document.writeln("sumAll(2,3,4) = " + sumAll(2, 3, 4) + "<br>")
+        document.writeln("sum = " + sum + "<br>");
+    </script>
+    <noscript>JavaScript not supported or enabled</noscript>
+</body>
+
+</html>

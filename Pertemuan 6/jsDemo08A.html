@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 08A: Functions</title>
+    <script id="s1">
+        //fungsi loop
+        function loop(max) {
+            //fungsi applyAndWrite
+            function applyAndWrite(f, y) {
+                document.writeln(f.name, '(', y, ') = ', f(y), "<br>")
+            }
+
+            //fungsi times2 di dalam loop
+            function times2(x) {
+                return 2 * x
+            }
+
+            function scope(x) {
+                return i * x;
+            }
+
+            function power2(x) {
+                return Math.pow(x, 2);
+            }
+
+            for (var i = 0; i <= max; i++) {
+                applyAndWrite(times2, i);
+                applyAndWrite(scope, i);
+                applyAndWrite(power2, i);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script id="s2">
+        loop(2);
+        //times2(6);
+    </script>
+    <noscript>JavaScript not supported or enabled</noscript>
+</body>
+
+</html>
