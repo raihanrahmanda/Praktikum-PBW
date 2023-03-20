@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papan Angka Random</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: "comic sans ms", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table,
+        td {
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        td:hover {
+            background-color: #ccc;
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button {
+            margin: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ccc;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .buttonContainer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tabel dua dimensi dengan 3 baris dan 3 kolom dengan angka 0 di setiap sel -->
+    <table>
+        <caption>
+            <h1>Papan Angka Random</h1>
+        </caption>
+        <tr>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+            <td id="cell3"></td>
+        </tr>
+        <tr>
+            <td id="cell4"></td>
+            <td id="cell5"></td>
+            <td id="cell6"></td>
+        </tr>
+        <tr>
+            <td id="cell7"></td>
+            <td id="cell8"></td>
+            <td id="cell9"></td>
+        </tr>
+    </table>
+    <br>
+    <div class="buttonContainer">
+        <button onclick="hitungCell()">Hitung Cell</button>
+        <button onclick="clearAll()">Hapus</button>
+        <button onclick="countAll()">Hitung Angka</button>
+    </div>
+    <script>
+        //fungsi untuk menghasilkan angka random dari 1-9
+        function random() {
+            return Math.floor(Math.random() * 9) + 1;
+        }
+
+        //fungsi untuk menghasilkan angka random setiap kali cell diklik
+        function clickCell() {
+            var num = random();
+            var id = this.id;
+            document.getElementById(id).innerHTML = num;
+        }
+
+        //perulangan event listener untuk setiap sel agar bisa diklik
+        for (var i = 1; i <= 9; i++) {
+            var cell = document.getElementById("cell" + i);
+            cell.addEventListener("click", clickCell);
+        }
+
+        //fungsi untuk menghitung jumlah sel yang sudah terisi
+        function hitungCell() {
+            var count = 0;
+            for (var i = 1; i <= 9; i++) {
+                if (document.getElementById("cell" + i).innerHTML != "") {
+                    count++;
+                }
+            }
+            alert("Jumlah sel yang sudah terisi adalah " + count);
+        }
+
+        //fungsi untuk menghapus seluruh isian sel
+        function clearAll() {
+            for (var i = 1; i <= 9; i++) {
+                document.getElementById("cell" + i).innerHTML = "";
+            }
+        }
+
+        //fungsi untuk menghitung jumlah semua angka yang ada di sel
+        function countAll() {
+            var sum = 0;
+            for (var i = 1; i <= 9; i++) {
+                if (document.getElementById("cell" + i).innerHTML != "") {
+                    sum += parseInt(document.getElementById("cell" + i).innerHTML);
+                }
+            }
+            alert("Jumlah seluruh bilangan dalam papan adalah " + sum);
+        }
+
+    </script>
+
+</body>
+
+</html>

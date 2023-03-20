@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and Forms</title>
+    <script>
+        function FahrenheitToCelsius(temperature) {
+            return (temperature - 32) * 5 / 9;
+        }
+
+        function processInput(val) {
+            let cel = document.getElementById("celsius");
+            if (val.match(/^[0-9]+(\.[0-9]+)?$/) && val != "") {
+                cel.value = FahrenheitToCelsius(val).toFixed(1);
+            } else {
+                document.getElementById("error").innerHTML = "Please enter a valid number";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript and Forms</h1>
+    <form name="form1" action="">
+        Temperature in Fahrenheit:
+        <input type="text" name="fahrenheit" id="df" size="10" value="0" /><br>
+        Temperature in Celsius:
+        <input type="text" name="celsius" onfocus="blur();" id="celsius" /><br />
+        <input type="button" name="btnConvert" value="Convert"
+            onclick="processInput(document.form1.fahrenheit.value);" />
+    </form>
+    <div id="error"></div>
+</body>
+
+</html>

@@ -6,6 +6,7 @@
     float: left;
     padding: 10px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .box2 {
@@ -16,6 +17,7 @@
     float: left;
     padding: 10px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .box3 {
@@ -26,6 +28,7 @@
     float: left;
     padding: 10px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 .box4 {
@@ -36,6 +39,7 @@
     float: left;
     padding: 10px;
     margin: 10px;
+    border-radius: 20px;
 }
 
 input[type="text"] {
