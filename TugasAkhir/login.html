@@ -6,26 +6,54 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="loginstyle.css">
-	<title>Go-Hunt! Login Page</title>
+	<script src="https://kit.fontawesome.com/12f4ff8fbb.js" crossorigin="anonymous"></script>
+	<title>CatchAWLogin Page</title>
 </head>
 
 <body>
-	<h2>Go-Hunt!</h2>
+	<h2>CatchAW</h2>
 	<div class="container">
-		<div class="box">
-			<h1>Welcome to Your<br>New Work Environment!</h1>
+		<div class="box1">
+			<h1>Go Find Your Partner<br>and Ready to Compete!</h1>
 			<form>
-				<input type="text" placeholder="Username or Phone Number" required>
-				<input type="password" placeholder="Password" required>
-				<a href="">forgot the password?</a>
-				<input class="login" type="submit" value="Login">
-				<input class="googlesignin" type="submit" value="Sign-in with Google">
+				<div class="field">
+					<input type="text" required>
+					<label>Username</label>
+				</div>
+				<div class="field">
+					<input type="password" id="myInput" required>
+					<span class="eye" onclick="showHidePW()">
+						<i id="hide1" class="far fa-eye" style="color: #aaa;"></i>
+						<i id="hide2" class="far fa-eye-slash" style="color: #aaa;"></i>
+					</span>
+					<label>Password</label>
+				</div>
+
+				<div class="content">
+					<div class="checklist">
+						<input type="checkbox" id="remember-me">
+						<label for="remember-me">Ingatkan saya</label>
+					</div>
+					<div class="forget-pass-link">
+						<a href="forget-pw.html">Lupa password?</a>
+					</div>
+				</div>
+
+				<div class="field">
+					<input type="submit" value="Login">
+				</div>
+
+				<div class="signup-link">
+					Belum punya akun? <a href="register.html">Daftar sekarang!</a>
+				</div>
 			</form>
 		</div>
-		<div class="image">
-			<img src="Task-bro.png" alt="Logo">
+		<div class="box2">
+			<img src="image/picture1.png" alt="Logo">
 		</div>
 	</div>
+
+	<script src="login.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Layout via HTML5 Elements</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: auto;
+            width: 1000px;
+            /* background-image: url("paper.gif"); */
+        }
+
+        /* Style the header */
+        header {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            /* materi position */
+            /* position: fixed;
+            left:0; 
+            right: 0;
+            height: 120px;
+            box-sizing: border-box;  */
+        }
+
+        /* Style the top navigation bar */
+        nav {
+            overflow: hidden;
+            background-color: #4CAF50;
+              /* materi position */
+            /* position: fixed;
+            left: 0;
+            right: 0;
+            top: 120px; */
+        }
+
+        /* Style the topnav links */
+        nav a {
+            /* float: left; */
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        nav a:hover {
+            background-color: #ccc;
+            color: black;
+        }
+
+
+        /* materi position */
+        /* main{
+            padding-top: 170px;
+        } */
+
+
+        aside{
+            width: 25%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+
+            /* height: 600px; */
+        }
+
+        article{
+            width: 75%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+
+            /* height: 600px; */
+        }
+
+        /* Clear floats after the columns */
+        main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        /* @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        } */
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <a href="finalLayout.html">Home</a>
+        <a href="finalTable.html">Anggota Aktif</a>
+        <a href="finalForm.html">Daftar Sekarang!</a>
+    </nav>
+
+    <main>
+            <aside>
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </aside>
+     
+            <article>
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas nostrum numquam dolor omnis, commodi dignissimos dolorum neque, adipisci est ab in unde, suscipit voluptates sit perferendis aliquid? Doloremque quas reiciendis quibusdam officiis laborum dolore beatae nesciunt quaerat cumque fugit quam at, optio alias perferendis atque! Laborum, nostrum, voluptatibus pariatur iure nam expedita, impedit optio ipsam nihil saepe doloribus libero obcaecati labore cupiditate explicabo deleniti asperiores magni. Dolores, fugit! Temporibus eum natus doloribus nemo a adipisci iste accusantium molestiae, debitis, recusandae hic sunt facere dolorem, ipsum neque quos! Vel doloribus expedita, labore natus recusandae fugiat distinctio assumenda, ab quibusdam error quo.</p>
+            </article>
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>

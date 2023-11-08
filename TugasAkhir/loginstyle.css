@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    background-color: #CDD984;
-    font-family: Arial, sans-serif;
+    background-color: #ffffff;
 }
 
 h1 {
     text-align: left;
     font-size: 36px;
     margin-bottom: 20px;
+}
+
+::selection {
+    background: #3a7bd5;
+    color: #fff;
 }
 
 form {
@@ -17,17 +30,18 @@ form {
 
 input[type="text"],
 input[type="password"] {
-    padding: 10px;
+    padding: 13px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
+    font-size: 16px;
 }
 
-.login {
-    background-color: #D47E63;
+input[type="submit"] {
+    background: linear-gradient(-135deg, #00d2ff, #3a7bd5);
     margin: 10px 0;
     color: #fff;
     border: none;
@@ -36,6 +50,9 @@ input[type="password"] {
     padding: 10px;
     margin-top: 10px;
     cursor: pointer;
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
 }
 
 img {
@@ -44,7 +61,7 @@ img {
     max-width: 100%;
 }
 
-.image {
+.box2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,19 +75,75 @@ img {
     align-items: center;
 }
 
-.googlesignin {
-    background-color: #fff;
-    margin: 10px 0;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    max-width: 320px;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.box {
+.box1 {
     width: 30em;
     margin-left: 100px;
+    padding: 30px 10px 10px 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content .forget-pass-link {
+    margin-right: 15px;
+}
+
+.container .signup-link {
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.content .checklist {
+    margin-left: 15px;
+}
+
+.container form {
+    padding: 10px 50px 50px 0px;
+}
+
+.container form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container form .field label {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 10px;
+    left: 10px;
+    color: black;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.eye {
+    position: absolute;
+    top: 53%;
+    right: 13px;
+    opacity: 0.6;
+}
+
+#hide1 {
+    display: none;
+}
+
+#hide2 {
+    display: block
 }

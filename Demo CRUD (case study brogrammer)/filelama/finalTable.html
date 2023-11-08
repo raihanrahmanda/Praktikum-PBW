@@ -1,0 +1,176 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title> Layout via HTML5 Elements</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: auto;
+            width: 1000px;
+            /* background-image: url("paper.gif"); */
+        }
+
+        /* Style the header */
+        header {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            /* materi position */
+            /* position: fixed;
+            left:0; 
+            right: 0;
+            height: 120px;
+            box-sizing: border-box;  */
+        }
+
+        /* Style the top navigation bar */
+        nav {
+            overflow: hidden;
+            background-color: #4CAF50;
+              /* materi position */
+            /* position: fixed;
+            left: 0;
+            right: 0;
+            top: 120px; */
+        }
+
+        /* Style the topnav links */
+        nav a {
+            /* float: left; */
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        nav a:hover {
+            background-color: #ccc;
+            color: black;
+        }
+
+
+        /* materi position */
+        /* main{
+            padding-top: 170px;
+        } */
+
+
+        aside{
+            width: 25%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+
+            /* height: 600px; */
+        }
+
+        article{
+            width: 75%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+
+            /* height: 600px; */
+        }
+
+        /* Clear floats after the columns */
+        main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even){background-color: #f2f2f2}
+
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+    </style>
+</head>
+
+    <body>
+        
+
+        <header>
+            <h1>Header</h1>
+        </header>
+    
+        <nav>
+            <a href="finalLayout.html">Home</a>
+            <a href="finalTable.html">Anggota Aktif</a>
+            <a href="finalForm.html">Daftar Sekarang!</a>
+        </nav>
+    
+        <main>
+                <aside>
+                    <h2>Column</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                </aside>
+         
+                <article>
+                    <h2>Daftar Anggota Coding Club</h2>
+                    <!-- <table border="1"> -->        
+                    <table border="1">
+                        <tr>
+                            <!-- <th colspan="2">Nama Lengkap</th> -->
+                            <th> Nama Depan</th>
+                            <th>Nama Belakang</th> 
+                            <th>Umur</th>
+                        </tr>
+                            
+                        <tr>
+                            <td> Jeff</td>
+                            <td> Bezos</td>
+                            <td> 57</td>
+                        </tr>
+            
+                        <tr>
+                            <td> Jack</td>
+                            <td> Ma</td>
+                            <td> 56</td>
+                            <!-- <td rowspan="2"> 56</td> -->
+                        </tr>
+            
+                        <tr>
+                            <td> Larry</td>
+                            <td> Page</td>
+                            <td> 47</td>
+                        </tr>
+                    </table>
+                </article>
+        </main>
+    
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>

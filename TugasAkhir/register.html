@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerstyle.css">
+    <script src="https://kit.fontawesome.com/12f4ff8fbb.js" crossorigin="anonymous"></script>
+    <title>CatchAW Form Register Page</title>
+</head>
+
+<body>
+    <h1>Small moves for Bigger Changes</h1>
+    <div class="wrapper">
+        <form action="#">
+            <div class="field">
+                <input type="text" required>
+                <label>Full Name</label>
+            </div>
+            <div class="field">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="field">
+                <input type="password" id="myInput1" required>
+                <span class="eye" onclick="showHidePW()">
+                    <i id="hide1" class="far fa-eye" style="color: #aaa;"></i>
+                    <i id="hide2" class="far fa-eye-slash" style="color: #aaa;"></i>
+                </span>
+                <label>Password</label>
+            </div>
+            <div class="field">
+                <input type="password" id="myInput2" required>
+                <span class="eye" onclick="showHidePW2()">
+                    <i id="hide3" class="far fa-eye" style="color: #aaa;"></i>
+                    <i id="hide4" class="far fa-eye-slash" style="color: #aaa;"></i>
+                </span>
+                <label>Rewrite Password</label>
+            </div>
+            <div class="content">
+                <div class="checkbox">
+                    <input type="checkbox" id="remember-me" required>
+                    <label for="remember-me">Setujui </label>
+                    <a href="#">User Agreement</a> dan
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="field">
+                <input type="submit" value="Sign-up">
+            </div>
+
+            <div class="login-link">
+                Sudah punya akun? <a href="login.html">Login sekarang!</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title> Layout via HTML5 Elements</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        * {
+          box-sizing: border-box;
+        }
+
+
+        body {
+            margin: auto;
+            width: 1000px;
+            /* background-image: url("paper.gif"); */
+        }
+
+        /* Style the header */
+        header {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            /* materi position */
+            /* position: fixed;
+            left:0; 
+            right: 0;
+            height: 120px;
+            box-sizing: border-box;  */
+        }
+
+        /* Style the top navigation bar */
+        nav {
+            overflow: hidden;
+            background-color: #4CAF50;
+              /* materi position */
+            /* position: fixed;
+            left: 0;
+            right: 0;
+            top: 120px; */
+        }
+
+        /* Style the topnav links */
+        nav a {
+            /* float: left; */
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        nav a:hover {
+            background-color: #ccc;
+            color: black;
+        }
+
+
+        /* materi position */
+        /* main{
+            padding-top: 170px;
+        } */
+
+
+        aside{
+            width: 25%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+
+            /* height: 600px; */
+        }
+
+        article{
+            width: 75%;
+            float: left;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+
+            /* height: 600px; */
+        }
+
+        /* Clear floats after the columns */
+        main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+        }
+
+        input[type=text],input[type=date],input[type=email],input[type=password], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+
+        input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: right;
+        }
+
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+    </style>
+</head>
+
+    <body>
+        
+
+        <header>
+            <h1>Header</h1>
+        </header>
+    
+        <nav>
+            <a href="finalLayout.html">Home</a>
+            <a href="finalTable.html">Anggota Aktif</a>
+            <a href="finalForm.html">Daftar Sekarang!</a>
+        </nav>
+    
+        <main>
+                <aside>
+                    <h2>Column</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                </aside>
+         
+                <article>
+                    <h2>Pendaftaran Akun Coding Club</h2>
+
+
+                    <!-- <form name="myForm" action="/action_page.php" target="_blank" autocomplete="on" novalidate> -->
+                    <form name="myForm">
+                    
+                    
+                     
+                      <label>Nama Lengkap:</label>              <!-- for="nama"-->
+                      <input type="text" >                       <!--id="nama" name="nama"-->
+                      <br><br>
+                      
+                      <label >Tanggal Lahir:</label>            <!--for="birthday"-->
+                      <input type="date">                       <!--id="birthday" name="birthday"-->
+                      <br><br>
+                      
+                      <label >Email:</label>                    <!--for="email"-->
+                      <input type="email">                      <!--id="email" name="email"-->
+                      <br><br>
+                      
+                      <label>Password:</label>                  <!--for="pwd"-->
+                      <input type="password" placeholder="Password untuk login berikutnya" size="40">                   <!--id="pwd" name="pwd"-->
+                      <br><br>
+                      
+                      <label>Jenis Kelamin:</label>
+                      <input type="radio" id="male">                                <!--name="jeniskelamin" value="1"-->
+                      <label for="male">Laki-Laki</label>
+                      <input type="radio" id="female">                              <!--name="jeniskelamin" value="2"-->
+                      <label for="female">Perempuan</label>
+                      <br><br>
+                      
+                      <label>Bahasa Pemrograman yang Ingin Dipelajari:</label><br>
+                      <input type="checkbox" id="bahasa1">                         <!--name="bahasa1" value="PHP"-->
+                      <label for="bahasa1"> PHP </label><br>
+                      <input type="checkbox" id="bahasa2">                         <!--name="bahasa2" value="Java"-->
+                      <label for="bahasa2"> Java </label><br>
+                      <input type="checkbox" id="bahasa3">                         <!--name="bahasa3" value="Python"-->
+                      <label for="bahasa3"> Python </label>
+                      <br><br>                                                     <!-- name bisa array -->
+                      
+                    
+                      <!-- disabled -->
+                      <!-- required -->
+                      <!-- readonly value="Read Only"-->
+                      <!-- placeholder -->
+                      <!-- size,minlength,maxlength  BACA AJA GA USAH DIDEMOIN-->
+                    
+                    
+                      <label for="alasan">Alasan Bergabung:</label>
+                      <textarea id="alasan" name="alasan" rows="4" cols="50"></textarea>                           
+                      <br><br>
+                    
+                      <label for="matkul">Mata Kuliah Favorit:</label>
+                      <select id="matkul" name="matkul">
+                        <option>Pengantar Teknologi Informasi</option>       <!--label="PTI" value="mk001"-->
+                        <option>Matematika Diskrit</option>                  <!--label="Matdis" value="mk002"-->
+                        <option>Basis Data Lanjutan</option>                 <!--label="Basdat" value="mk003" --> 
+                        <option>Pemrograman Berbasis Web</option>            <!--label="PBW" value="mk004"-->
+                        <option>Rekayasa Perangkat Lunak</option>            <!--label="RPL" value="mk005"-->
+                      </select>
+                      <br><br>
+                    
+                      <!-- selected -->
+                      <!-- disabled -->
+                      <!-- <option value ="" > Pilihan Mata Kuliah:  </ option > REQUIRED di select--> 
+                      
+                      <input type="submit" value="Submit">
+                      <input type="reset">
+                    
+                      <!-- bisa input bisa button-->
+                      
+                    </form> 
+                </article>
+        </main>
+    
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>
