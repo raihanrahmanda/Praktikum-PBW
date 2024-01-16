@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* padding: 20px 20px; */
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.box {
+    flex: 20%;
+    display: table;
+    align-items: center;
+    text-align: center;
+    background-color: #3a7bd5;
+    color: #fff;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+.box2 {
+    margin-left: 20px;
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.About {
+    float: right;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.history {
+    margin-top: 20px;
+    float: right;
+    padding: 30px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+.box img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 250px;
+    width: 250px;
+}
+
+.box p {
+    margin-top: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.container-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container-icon i {
+    color: #fff;
+}
+
+.container-icon i:hover {
+    color: gainsboro;
+}
+
+.box2 h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.box-main {
+    margin-top: 10px;
+}
+
+.box-table table,
+.box-table td {
+    border-bottom: 1px solid gainsboro;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+
+.box-table {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.table-left {
+    width: 15%;
+}
+
+.table-left p {
+    font-size: 14px;
+}
+
+.table-mid {
+    width: 80%;
+}
+
+.table-mid h3 {
+    font-size: 16px;
+}
+
+.table-mid p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.custom-margin {
+    margin: 5px 0;
+}
+
+.custom-h3 {
+    margin-top: 12px;
+    margin-bottom: 1px;
+}
+
+@media screen and (max-width: 1068px) {
+    .container {
+        display: table;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .About {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .About h1 {
+        text-align: center;
+    }
+}

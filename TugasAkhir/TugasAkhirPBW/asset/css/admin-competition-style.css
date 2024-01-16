@@ -1,0 +1,99 @@
+.comps-table {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-x: auto;
+}
+
+.comps-table th,
+.comps-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.comps-table th:nth-child(6),
+.comps-table td:nth-child(6) {
+    width: 5%;
+}
+
+.comps-table th:nth-child(7),
+.comps-table td:nth-child(7) {
+    width: 5%;
+}
+
+.comps-table table {
+    width: 300%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+
+.comps-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comps-table td {
+    text-align: left;
+}
+
+.comps-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.comps-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.row-count {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.action-icon ion-icon {
+    font-size: 4rem;
+    color: #aaa;
+}
+
+#update:hover {
+    color: #3a7bd5;
+}
+
+#trash:hover {
+    color: red;
+}
+
+.action-icon {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.input-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 110px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-btn a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.input-btn a:hover {
+    color: white;
+}
+
+.input-btn:hover {
+    background-color: #3a7bd5;
+    transition: background-color 0.3s ease;
+}

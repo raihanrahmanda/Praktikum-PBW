@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+
+.title {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+}
+
+.ssearch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px #3a7bd5;
+    transition: 0.2s;
+    overflow: hidden;
+
+}
+
+.ssearch.active {
+    width: 500px;
+}
+
+.ssearch .search-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.search-icon i {
+    color: #3a7bd5;
+    transition: 0.2s;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.ssearch .input {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left: 60px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssearch .input input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 0;
+
+}
+
+.clear {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
+.toggle-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.competition-card {
+    margin-left: 5px;
+    width: 230px;
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.competition-image img {
+    width: 200px;
+    height: auto;
+    aspect-ratio: 3/4;
+}
+
+.competition-card .competition-image {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.competition-card img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.competition-card .competition-title {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/*-----------------POPUP-----------------*/
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 30;
+    display: none;
+}
+
+.popup .popup-content {
+    border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 95%;
+    max-width: 600px;
+    min-height: 250px;
+    z-index: 2;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    z-index: 90;
+}
+
+
+.popup .popup-content .content-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.content-box li {
+    padding-top: 10px;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .popup-content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+span {
+    cursor: pointer;
+}
+
+.add-icon {
+    border: 5px solid #3a7bd5;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 510px;
+    right: 20px;
+    border-radius: 50px;
+    background: #3a7bd5;
+}
+
+.add-icon i {
+    color: white;
+    transition: 0.2s;
+    position: fixed;
+    top: 535px;
+    right: 30px;
+}

@@ -1,0 +1,115 @@
+.news-table {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-x: auto;
+}
+
+.news-table th,
+.news-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.news-table th:nth-child(1),
+.news-table td:nth-child(1) {
+    width: 1%;
+}
+
+.news-table th:nth-child(2),
+.news-table td:nth-child(2) {
+    width: 5%;
+}
+
+.news-table th:nth-child(3),
+.news-table td:nth-child(3) {
+    width: 10%;
+}
+
+.news-table th:nth-child(5),
+.news-table td:nth-child(5) {
+    width: 7%;
+}
+
+.news-table th:nth-child(6),
+.news-table td:nth-child(6) {
+    width: 2%;
+}
+
+
+.news-table table {
+    width: 120%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+
+.news-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+}
+
+.news-table td {
+    text-align: left;
+}
+
+.news-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.news-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.row-count {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.action-icon ion-icon {
+    font-size: 4rem;
+    color: #aaa;
+}
+
+#update:hover {
+    color: #3a7bd5;
+}
+
+#trash:hover {
+    color: red;
+}
+
+.action-icon {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.input-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 110px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-btn a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.input-btn a:hover {
+    color: white;
+}
+
+.input-btn:hover {
+    background-color: #3a7bd5;
+    transition: background-color 0.3s ease;
+}

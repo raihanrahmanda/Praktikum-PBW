@@ -1,0 +1,27 @@
+List Kebutuhan Website PBW
+(semua sudah termasuk css dan jsnya)
+
+user view
+-login.html
+-register.html
+-forget-pw.html
+-layout.html
+-faq.html
+-competition-info.html
+-seminar-info.html
+-news-info.html
+-profile.html
+
+admin view
+-beranda.php
+-competition-form.html/php
+-news-form.html/php
+-seminar-info.html
+-tabel-user.html
+-tabel-competition.html
+-tabel-news.html
+-tabel-seminar.html
+
+yg belum
+-halaman project
+-halaman profile orang lain

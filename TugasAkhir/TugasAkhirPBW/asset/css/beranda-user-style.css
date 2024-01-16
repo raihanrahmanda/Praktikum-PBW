@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+
+.boxes {
+    margin-top: 70px;
+}
+
+.boxes h2 {
+    font-size: 18px;
+}
+
+.box1 {
+    margin-top: 150px;
+    width: 300px;
+    height: 600px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.box1::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f1f1f1;
+}
+
+.box1::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+.box1::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.box1::-webkit-scrollbar-thumb:hover {
+    background-color: #3a7bd5;
+}
+
+.box1 h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box1 p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box1 img {
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 2px solid gainsboro;
+}
+
+.box1 input[type="text"] {
+
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+}
+
+.box2 {
+    width: 500px;
+    height: 260px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box2-title {
+    display: flex;
+}
+
+.box2-title .icon {
+    margin-left: 435px;
+}
+
+.box2-title .icon i {
+    color: grey;
+}
+
+.box2-title .icon i:hover {
+    color: black;
+}
+
+.news-container {
+    padding: 1vw 3vw;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+
+.news-container::-webkit-scrollbar {
+    display: none;
+}
+
+.news-card {
+    flex: 0 0 10px;
+    width: 250px;
+    height: 450px;
+    margin-right: 10px;
+}
+
+.news-card:hover {
+    cursor: pointer;
+}
+
+.news-card:hover .news-info {
+    height: 150px;
+    width: 200px;
+    bottom: 155px;
+    background: black;
+    transform: scale(1.1) rotate(-2deg);
+    opacity: 0.7;
+}
+
+.news-card:hover p {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.news-card:hover img {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+.news-card>img {
+    inline-size: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.news-image img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.news-info {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 100px;
+    color: white;
+    overflow: hidden;
+}
+
+.news-info p {
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.pre-btn,
+.next-btn {
+    border: none;
+    width: 50px;
+    height: 215px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+    margin-left: 7px;
+}
+
+.next-btn {
+    right: 0;
+    margin-right: 10px;
+}
+
+.pre-btn img,
+.next-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.next-btn:hover img {
+    opacity: 1;
+}
+
+.box3 {
+    width: 335px;
+    height: 260px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box3-title {
+    display: flex;
+}
+
+.box3-title .icon {
+    margin-left: 145px;
+}
+
+.box3-title .icon i {
+    color: grey;
+}
+
+.box3-title .icon i:hover {
+    color: black;
+}
+
+.box3 img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+}
+
+.box3 .user {
+    display: flex;
+
+}
+
+.box3 .user p {
+    margin-left: 20px;
+    margin-top: 32px;
+    font-size: 16px;
+}
+
+.box4 {
+    width: 420px;
+    height: 300px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.media-scroller::-webkit-scrollbar {
+    background-color: #f1f1f1;
+    height: 14px;
+}
+
+.media-scroller::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+.media-scroller::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.media-scroller::-webkit-scrollbar-thumb:hover {
+    background-color: #3a7bd5;
+}
+
+.box4-title {
+    display: flex;
+}
+
+.box4-title .icon {
+    margin-left: 250px;
+}
+
+.box4-title .icon i {
+    color: grey;
+}
+
+.box4-title .icon i:hover {
+    color: black;
+}
+
+.media-scroller {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 10px;
+}
+
+.media-element .title {
+    text-align: center;
+}
+
+.media-element img {
+    width: 13px;
+    height: 160px;
+}
+
+.media-element>img {
+    inline-size: 100%;
+    /* object-fit: cover; */
+    /* aspect-ratio: 3/4; */
+}
+
+.media-element>img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline>* {
+    scroll-snap-align: start;
+}
+
+.box5 {
+    width: 417px;
+    height: 300px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.box5-title {
+    display: flex;
+}
+
+.box5-title .icon {
+    margin-left: 285px;
+}
+
+.box5-title .icon i {
+    color: grey;
+}
+
+.box5-title .icon i:hover {
+    color: black;
+}

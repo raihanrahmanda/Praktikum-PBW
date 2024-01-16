@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: white;
+}
+
+::selection {
+    background: #3a7bd5;
+    color: #fff;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.wrapper {
+    width: 600px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #3a7bd5;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 17px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0px;
+    left: 16px;
+    color: #3a7bd5;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.content .checkbox {
+    margin-left: 15px;
+    margin-top: 10px
+}
+
+.checkbox a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper .login-link {
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: center;
+
+}
+
+.wrapper .login-link a {
+    color: black;
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    background: #3a7bd5;
+    margin: 10px 0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    max-width: 320px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.eye {
+    position: absolute;
+    top: 35%;
+    right: 13px;
+    opacity: 0.6;
+}
+
+#hide1 {
+    display: none;
+}
+
+#hide2 {
+    display: block
+}
+
+#hide3 {
+    display: none;
+}
+
+#hide4 {
+    display: block
+}
+
+/*--------POPUP--------*/
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 95%;
+    max-width: 900px;
+    min-height: 250px;
+    z-index: 2;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.popup .content h1 {
+    text-align: center;
+}
+
+.popup .content .content-box {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.content-box li {
+    padding-top: 10px;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.checkbox span {
+    cursor: pointer;
+}

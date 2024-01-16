@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #f1f1f1;
+    position: relative;
+    top: 70px;
+}
+
+.wrapper {
+    width: 800px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.wrapper .title span {
+    color: #3a7bd5;
+}
+
+.wrapper form {
+    padding: 10px 50px 50px 30px;
+}
+
+.wrapper form .field {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.wrapper textarea {
+    width: 720px;
+    resize: none;
+    height: 30px;
+    outline: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-height: 330px;
+    border: 1px solid #bfbfbf;
+}
+
+textarea:is(:focus, :valid) {
+    border: 1px solid #3a7bd5;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #3a7bd5;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #3a7bd5;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 17px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .date label {
+    color: #aaa;
+}
+
+.wrapper form .date {
+    color: white;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0px;
+    left: 16px;
+    color: #3a7bd5;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+form .field textarea:focus~label,
+form .field textarea:valid~label {
+    top: 0px;
+    left: 16px;
+    color: #3a7bd5;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.wrapper .submit-btn input {
+    background: #3a7bd5;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: 742px;
+}
+
+.upload-poster {
+    margin-top: 20px;
+}

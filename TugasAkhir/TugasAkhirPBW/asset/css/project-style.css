@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.boxes {
+    display: flex;
+    margin-top: 70px;
+}
+
+.box-main {
+    overflow-y: auto;
+}
+
+.competitions-box {
+    width: 597px;
+    height: 510px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.competitions-box::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f1f1f1;
+}
+
+.competitions-box::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+/* Handle */
+.competitions-box::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.competitions-box::-webkit-scrollbar-thumb:hover {
+    background-color: #3a7bd5;
+}
+
+.seminar-box {
+    width: 597px;
+    height: 510px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.seminar-box::-webkit-scrollbar {
+    width: 12px;
+    background-color: #f1f1f1;
+}
+
+.seminar-box::-webkit-scrollbar-track {
+    border-radius: 8px;
+}
+
+/* Handle */
+.seminar-box::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.seminar-box::-webkit-scrollbar-thumb:hover {
+    background-color: #3a7bd5;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 10px;
+    gap: 20px;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 20;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay1:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper1 {
+    margin: 30px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: gainsboro;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper1 h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper1 .close1 {
+    position: absolute;
+    top: 5px;
+    right: 22px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper1 .close1:hover {
+    color: #3a7bd5;
+}
+
+.wrapper1 .content1 {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: gainsboro;
+    padding: 20px 0;
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #3a7bd5;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay3:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper3 {
+    margin: 70px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: gainsboro;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper3 h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper3 .close3 {
+    position: absolute;
+    top: 5px;
+    right: 22px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper3 .close3:hover {
+    color: #3a7bd5;
+}
+
+.wrapper3 .content3 {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.container3 {
+    border-radius: 5px;
+    background-color: gainsboro;
+    padding: 20px 0;
+}
+
+.box-icon i {
+    color: grey;
+}
+
+.box-icon i:hover {
+    color: #3a7bd5;
+}
+
+.box-main {
+    margin-top: 10px;
+}
+
+.box-table table,
+.box-table td {
+    border-bottom: 1px solid gainsboro;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.box-table i {
+    color: grey;
+    margin-right: 10px;
+}
+
+.box-table i:hover {
+    color: #3a7bd5;
+}
+
+.box-table {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
+}
+
+.table-left {
+    font-size: 12px;
+    width: 15%;
+}
+
+.table-right {
+    margin-left: 185px;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay2:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper2 {
+    margin: 70px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: gainsboro;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper2 h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper2 .close2 {
+    position: absolute;
+    top: 5px;
+    right: 22px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper2 .close2:hover {
+    color: #3a7bd5;
+}
+
+.wrapper2 .content2 {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: gainsboro;
+    padding: 20px 0;
+}
+
+.table-mid {
+    width: 50%;
+}
+
+.table-mid h3 {
+    font-size: 14px;
+}
+
+.table-mid p {
+    font-size: 12px;
+    text-align: justify;
+}
